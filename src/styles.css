@@ -5,7 +5,16 @@
     --background-color-main: hsl(0, 0%, 98%);
     --box-shadow-nav: 0 0 0.875em rgba(0,0,0,.16);
     --hover-select: #f6f6f6;
+    --color-search: #c0bfbf;
     --white: #fff;
+    --transition-delay: .6s; 
+}
+
+.dark {
+    --base-text-color: #fff;
+    --background-color-main: #202c37;
+    --hover-select: rgb(32 44 55 / 51%);
+    --white: #2b3945;
 }
 
 html {
@@ -27,11 +36,13 @@ body {
     min-height: 100vh; 
     background: var(--background-color-main);
     font-family: 'Nunito Sans', sans-serif;
+    transition: var(--transition-delay);
 }
 
 h1, h2, h3 {
     margin: 0;
     font-weight: 800;
+    transition: var(--transition-delay);
 }
 
 .contenedor {

@@ -10,6 +10,7 @@ button {
     cursor: pointer;
     padding: 10px 22px;
     border-radius: 5px;
+    color: var(--base-text-color);
     background: var(--white);
     box-shadow: var(--box-shadow-nav);
 }
@@ -25,13 +26,10 @@ button i {
 
 /* Informacion */
 
-/* .detail-content {
-    padding: 0;
-} */
-
 .country-content {
     display: flex;
     align-items: flex-start;
+    color: var(--base-text-color);
 }
 
 .country-img {

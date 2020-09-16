@@ -14,15 +14,17 @@
 .filter-input button, .control-input {
     border: none;
     padding-left: 20px;
+    background: var(--white);
+    transition: var(--transition-delay);
 }
 
 .filter-input button {
     width: 60px;
-    background: var(--white);
 }
 
 .control-input {
     width: 100%;
+    color: var(--color-search);
     margin-bottom: 0;
 }
 
@@ -47,6 +49,8 @@
     border-radius: 5px;
     background: var(--white);
     box-shadow: var(--box-shadow-nav);
+    color: var(--base-text-color);
+    transition: var(--transition-delay);
 }
 
 .pais-img img {

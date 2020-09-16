@@ -1,6 +1,7 @@
 .dropdown {
     display: inline-block;
     position: relative;
+    color: var(--base-text-color);
 }
 
 .dd-button, .dd-menu {
@@ -11,6 +12,7 @@
     cursor: pointer;
     border-radius: 5px;
     white-space: nowrap;
+    transition: var(--transition-delay);
 }
 
 .dd-button {

@@ -6,7 +6,7 @@
     
             <h1>Where in the world?</h1>
         
-            <span><i class='bx bxs-moon'></i> Dark Mode</span>
+            <span (click)="changeTheme()"><i [class]=" dark ? 'bx bx-moon' : 'bx bxs-moon'"></i>{{ dark ? 'Light' : 'Dark'}} Mode</span>
         
         </div>
     

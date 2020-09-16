@@ -18,6 +18,8 @@ h1 {
 header {
     box-shadow: var(--box-shadow-nav);
     background: var(--white);
+    color: var(--base-text-color);
+    transition: var(--transition-delay);
     width: 100%;
     margin-bottom: 3em;
 }

@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  dark: boolean;
+
+  constructor() {
+    this.dark = false;
+  }
 
   ngOnInit(): void {
+  }
+
+  changeTheme(){
+    if (!this.dark) {
+      document.querySelector('body').classList.add('dark');
+      this.dark = true;
+    } else {
+      document.querySelector('body').classList.remove('dark');
+      this.dark = false;
+    }
   }
 
 }
