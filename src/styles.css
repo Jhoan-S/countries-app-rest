@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+:root {
+    --base-text-color: #000;
+    --background-color-main: hsl(0, 0%, 98%);
+    --box-shadow-nav: 0 0 0.875em rgba(0,0,0,.16);
+    --hover-select: #f6f6f6;
+    --white: #fff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh; 
+    background: var(--background-color-main);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 800;
+}
+
+.contenedor {
+    max-width: 100%;
+    padding: 0 1.25em;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}

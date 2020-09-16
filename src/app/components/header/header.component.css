@@ -1,0 +1,35 @@
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1.25em;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+header {
+    box-shadow: var(--box-shadow-nav);
+    background: var(--white);
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+span {
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+span i {
+    margin-right: 0.5em;
+}

@@ -1,0 +1,14 @@
+<label class="dropdown" #combo>
+
+    <div class="dd-button" (click)="abrirRegiones()">
+        Select Region <i class='bx bxs-chevron-down'></i>
+    </div>
+
+    <ul class="dd-menu" >
+        <li (click)="buscarPorCategoria('zero')">All</li>
+        <ng-container *ngFor="let region of regiones">
+            <li *ngIf="region !== ''" (click)="buscarPorCategoria(region)">{{ region }}</li>
+        </ng-container>
+    </ul>
+
+</label>

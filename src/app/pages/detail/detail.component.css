@@ -1,0 +1,94 @@
+.back {
+    padding-top: 0.5em;
+    margin-bottom: 3em;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    padding: 10px 22px;
+    border-radius: 5px;
+    background: var(--white);
+    box-shadow: var(--box-shadow-nav);
+}
+
+button span {
+    font-size: 14px;
+}
+
+button i {
+    font-size: 16px;
+    margin-right: 0.5em;
+}
+
+/* Informacion */
+
+/* .detail-content {
+    padding: 0;
+} */
+
+.country-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.country-img {
+    margin-right: 5em;
+    flex-shrink: 0;
+}
+
+.country-img img {
+    width: 600px;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.country-info {
+    width: 100%;
+    margin-top: 2.5em;
+}
+
+.country-info p {
+    margin: 0 0 0.5em 0;
+}
+
+.country-info span {
+    font-weight: 600;
+}
+
+
+h2 {
+    margin-bottom: 1em;
+}
+
+.content-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2em;
+}
+
+.country-second-slot {
+    margin: 0;
+}
+
+a.country-limit {
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    background: var(--white);
+    box-shadow: var(--box-shadow-nav);
+}
+
+a.country-limit:last-child {
+    margin: 0;
+}
+
+.country-limits span {
+    font-size: 18px;
+    margin-bottom: 1em;
+    display: inline-block;
+}

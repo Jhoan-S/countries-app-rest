@@ -1,0 +1,92 @@
+<div class="contenedor">
+
+    <div class="detail-content">
+
+        <div class="back">
+            <button routerLink="/">
+                <i class='bx bx-left-arrow' ></i> <span>Back</span>
+                <!-- <i class='bx bxs-left-arrow' ></i> -->
+            </button>
+        </div>
+
+        <ng-container *ngIf="country">
+        
+            <div class="country-content">
+
+                <div class="country-img">
+                    <img [src]="country.flag" alt="">
+                </div>
+
+                <div class="country-info">
+
+                    <h2>{{ country.name }}</h2>
+
+                    <div class="content-flex">
+
+                        <div class="country-primary-slot">
+
+                            <p>
+                                <span>Native Name:</span>
+                                {{ country.nativeName }}
+                            </p>
+                            <p>
+                                <span>Population:</span>
+                                {{ country.population | number }}
+                            </p>
+                            <p>
+                                <span>Region:</span>
+                                {{ country.region }}
+                            </p>
+                            <p>
+                                <span>Sub Region:</span>
+                                {{ country.subregion }}
+                            </p>
+                            <p>
+                                <span>Capital:</span>
+                                {{ country.capital }}
+                            </p>
+
+                        </div>
+
+                        <div class="country-second-slot">
+
+                            <p>
+                                <span>Top Level Domain:</span>
+                                {{ country.topLevelDomain[0] }}
+                            </p>
+                            <p>
+                                <span>Currencies:</span>
+                                {{ currencies }}
+                            </p>
+                            <p>
+                                <span>Languages:</span>
+                                {{ languages }}
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="country-limits">
+
+                        <span>Border Countries:</span>
+                        <div class="limits-content">
+
+                            <a *ngFor="let border of borders" class="country-limit" (click)="detail(border.code)">
+                                {{ border.name }}
+                            </a>
+
+                            <p *ngIf="!borders || borders.length === 0">This country has no borders!</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </ng-container>
+
+    </div>
+
+</div>

@@ -1,0 +1,44 @@
+<div class="filtros">
+
+    <div class="filter-input">
+        <button><i class='bx bx-search-alt-2' style='color:#ababab'  ></i></button>
+        <input class="control-input" type="text" placeholder="Search for a country..." (keyup)="searchCountry( termino.value )" #termino>
+    </div>
+
+    <app-filter (selectRegion)="filterByRegion($event)"></app-filter>
+
+</div>
+
+<!-- Contenedor de países -->
+
+<div class="paises">
+
+    <div class="contenedor">
+
+        <div class="contenedor-paises">
+
+            <div class="pais" *ngFor="let country of countries" (click)="details(country.alpha3Code)">
+
+                <div class="pais-img">
+                    <img [src]="country.flag" alt="">
+                </div>
+
+                <div class="info-pais">
+
+                    <h3>{{ country.name }}</h3>
+
+                    <div class="info-det-pais">
+                        <p><span>Population:</span> {{ country.population | number }}</p>
+                        <p><span>Region:</span> {{ country.region }}</p>
+                        <p><span>Capital:</span> {{ country.capital }}</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
