@@ -1,13 +1,14 @@
 .filtros {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0 1.25em;
 }
 
 .filter-input {
     display: flex;
-    width: 550px;
+    width: 100%;
     border-radius: 5px;
+    margin-bottom: 2em;
     box-shadow: var(--box-shadow-nav);
 }
 
@@ -23,9 +24,31 @@
 }
 
 .control-input {
+    height: 50px;
     width: 100%;
     color: var(--color-search);
-    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .filtros {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .filter-input {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .filter-input {
+        width: 550px;
+        margin-bottom: 0;
+    }
+
 }
 
 /* Contenedor de países */

@@ -11,7 +11,7 @@
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 800;
 }
 
@@ -20,13 +20,13 @@ header {
     background: var(--white);
     color: var(--base-text-color);
     transition: var(--transition-delay);
+    margin-bottom: 2em;
     width: 100%;
-    margin-bottom: 3em;
 }
 
 span {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -34,4 +34,28 @@ span {
 
 span i {
     margin-right: 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    header {
+        margin-bottom: 3em;
+    }
+
+    span {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
 }
